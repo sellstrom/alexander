@@ -10,9 +10,11 @@ import Testimonials from '~/components/widgets/Testimonials.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
+import Features from '~/components/widgets/Features.astro';
+import Note from '~/components/widgets/Note.astro';
 
 const metadata = {
-  title: 'Personal Homepage Demo',
+  title: 'Alexander Sellström - Full-Stack Software Engineer',
 };
 ---
 
@@ -20,14 +22,14 @@ const metadata = {
   <Fragment slot="announcement"></Fragment>
   <Fragment slot="header">
     <Header
-      links={[
+      links={[/*
         { text: 'Home', href: '#' },
         { text: 'About', href: '#about' },
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
         { text: 'Github', href: 'https://github.com/onwidget' },
-      ]}
+      */]}
       actions={[
         {
           text: 'Hire me',
@@ -43,15 +45,14 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
+    title="Alexander Sellström"
+    tagline="Full-Stack Software Engineer"
     actions={[{ variant: 'primary', text: 'Hire me', href: getPermalink('/contact#form') }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree from
-      New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into captivating
-      realities.
-    </Fragment>
+      I specialize in creating <span class="font-semibold">peer-to-peer protocols</span> and applications, leveraging the power of blockchain and zero-knowledge cryptograpy.
+      On a mission to deliver us from the <span class="font-semibold">oppressive centralized internet</span>. 
+   </Fragment>
   </Hero>
 
   <!-- Content Widget **************** -->
@@ -59,7 +60,7 @@ const metadata = {
   <Content
     id="about"
     columns={3}
-    items={[
+    items={[/*
       {
         icon: 'tabler:brand-dribbble',
         callToAction: {
@@ -84,9 +85,9 @@ const metadata = {
           href: '#',
         },
       },
-    ]}
+    */]}
     image={{
-      src: 'https://images.unsplash.com/photo-1491349174775-aaafddd81942?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      src: '~/assets/images/alex-hero.png',
       alt: 'Colorful Image',
       loading: 'eager',
     }}
@@ -95,21 +96,40 @@ const metadata = {
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
         Welcome to my creative journey. My work is a testament to my commitment to bringing ideas to life, where each
-        pixel becomes a brushstroke in the canvas of imagination.
+        bit of code becomes a brushstroke in the canvas of imagination.
       </p>
       <br />
       <p>
-        I find inspiration in the world around me, whether through the pages of a captivating novel, the intricate
-        details of typography, or the vibrant hues of nature during my outdoor escapades.
+        Now looking for new challenges.
       </p>
-      <br />
-      <p>If you're curious to dive deeper into my work, you can follow me:</p>
+      
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+  <Note />
+  <Features
+    id="features"
+    tagline="Current Projects"
+    title="What I am working on right now"
+    subtitle="My own projects and contributions to others."
+    items={[
+      {
+        title: 'Emerald',
+        description:
+          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Myntfot',
+        description:
+          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+        icon: 'tabler:components',
+      },
+    ]}
+  />
 
   <!-- Steps Widget ****************** -->
 
@@ -117,16 +137,27 @@ const metadata = {
     id="resume"
     title="Work experience"
     items={[
-      {
+       {
         title:
-          'Graphic Designer <br /> <span class="font-normal">ABC Design Studio, New York, NY</span> <br /> <span class="text-sm font-normal">2021 - Present</span>',
-        description: `Collaborate with clients to understand design requirements and objectives. <br /> Develop branding solutions, including logos, color palettes, and brand guidelines. <br /> Design marketing materials such as brochures, posters, and digital assets. <br /> Create visually appealing user interfaces for websites and applications.`,
+          'Software Engineer <br /> <span class="font-normal"><a href=#>Advatar Systems AB</a></span> <br /> <span class="text-sm font-normal">2022-Present</span>',
+        description: `
+        Specializing in Mobile Apps on Android, Digital Identity and Verifiable Credential Infrastructure Projects.
+        `,
         icon: 'tabler:briefcase',
       },
       {
         title:
-          'Junior Graphic Designer <br /> <span class="font-normal">XYZ Creative Agency, Los Angeles, CA</span> <br /> <span class="text-sm font-normal">2018 - 2021</span>',
-        description: `Assisted senior designers in creating design concepts and visual assets. <br /> Contributed to the development of brand identities and marketing collateral. <br /> Collaborated with the marketing team to ensure consistent design across campaigns. <br /> Gained hands-on experience in various design software and tools.`,
+          'Test Engineer <br /> <span class="font-normal"><a href=https://certify.health>Certify Health</a></span> <br /> <span class="text-sm font-normal">2021</span>',
+        description: `
+        Wrote unit tests for SaaS to issue EUDCC Covid Certificates.
+        `,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Volunteer Manager for Polhacks <br /> <span class="font-normal"><a href=https://www.utn.se>Uppsala Union of Engineering and Science Students (UTN)</a></span> <br /> <span class="text-sm font-normal">2017 - 2018</span>',
+        description: `
+     Polhacks is an annual three day LAN-party and game festival held by UTN. For one year my main responsibilites included educating and managing ~40 volunteer workers and planning, procuring, and installing the equipment nessescary for powering hundreds of computers. Beyond my main responsibilities associated with my role, I had to assist my committee in other tasks such as hosting dinners for hundreds of people, procure sponsorships, hold tournaments, and more. This taught me valuable leadership and teamworking skills.   `,
         icon: 'tabler:briefcase',
       },
     ]}
@@ -140,11 +171,11 @@ const metadata = {
     title="Education"
     items={[
       {
-        title: `Master of Fine Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2018 - 2020</span>`,
+        title: `Master of Science Information Technology <br /> <span class="font-normal"><a href=https://www.uu.se/en/students/department/information-technology>Uppsala University</a></span></span> <br /> <span class="text-sm font-normal">2017 - </span>`,
         icon: 'tabler:school',
       },
       {
-        title: `Bachelor of Arts in Graphic Design <br /> <span class="font-normal">New York University's School of Design</span> <br /> <span class="text-sm font-normal">2014 - 2018</span>`,
+        title: `Advanced Mathematics Program <br /> <span class="font-normal"><a href=https://www.danderyd.se/skolor/danderyds-gymnasium/program/spetsutbildning-i-matematik/>Danderyds Gymnasium</a></span> <br /> <span class="text-sm font-normal">2013 - 2016</span>`,
         icon: 'tabler:school',
       },
     ]}
@@ -155,45 +186,21 @@ const metadata = {
 
   <Features3
     title="Skills"
-    subtitle="Discover the proficiencies that allow me to bring imagination to life through design."
+    subtitle="Discover the proficiencies that allow me to bring imagination to life through software."
     columns={3}
     defaultIcon="tabler:point-filled"
     items={[
       {
-        title: 'Graphic design',
+        title: 'Analytical Mind',
         description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
       },
       {
-        title: 'Branding and identity',
+        title: 'Attention to detail',
         description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
       },
       {
         title: 'User-centered design',
         description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
-      {
-        title: 'Adobe Creative Suite',
-        description: 'Skilled in using Photoshop, Illustrator, and InDesign to create and edit visual elements.',
-      },
-      {
-        title: 'Typography',
-        description: 'Adept in selecting and manipulating typefaces to enhance design aesthetics.',
-      },
-      {
-        title: 'Color theory',
-        description: 'Proficient in using color to evoke emotions and enhance visual harmony.',
-      },
-      {
-        title: 'Print and digital design',
-        description: 'Knowledgeable in designing for both print materials and digital platforms.',
-      },
-      {
-        title: 'Attention to detail',
-        description: 'Diligent in maintaining precision and quality in all design work.',
-      },
-      {
-        title: 'Adaptability',
-        description: 'Quick to adapt to new design trends, technologies, and client preferences.',
       },
     ]}
   />
@@ -202,35 +209,37 @@ const metadata = {
 
   <Content
     id="porfolio"
-    title="Elevating visual narratives"
-    subtitle="Embark on a design journey that surpasses pixels, entering a realm of imagination. Explore my portfolio, where passion and creativity converge to shape enthralling visual narratives."
+    title="Academic Project"
+    subtitle="Some of my projects from my studies."
     isReversed
     items={[
       {
         title: 'Description:',
         description:
-          'Developed a comprehensive brand identity for a tech startup, Tech Innovators, specializing in disruptive innovations. The goal was to convey a modern yet approachable image that resonated with both corporate clients and tech enthusiasts.',
+          'A cross-platform mobile application written in Flutter for renting privately owned vehicles.    ',
       },
       {
         title: 'Role:',
         description:
-          'Led the entire branding process from concept to execution. Created a dynamic logo that symbolized innovation, selected a vibrant color palette, and I designed corporate stationery, website graphics, and social media assets.',
+          'Led the entire process from concept to execution. ',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
       alt: 'Tech Design Image',
     }}
-    callToAction={{
+    callToAction={
+    {
       target: '_blank',
       text: 'Go to the project',
       icon: 'tabler:chevron-right',
       href: '#',
-    }}
+    }
+    }
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Brand identity for tech innovators</span>
+        Project 1: <br /><span class="text-2xl">CarsBnB</span>
       </h3>
     </Fragment>
 
@@ -316,7 +325,7 @@ const metadata = {
 
   <!-- Testimonials Widget *********** -->
 
-  <Testimonials
+  <!--Testimonials
     title="Client testimonials"
     subtitle="Discover what clients have to say about their experiences working with me."
     testimonials={[
@@ -375,11 +384,11 @@ const metadata = {
         },
       },
     ]}
-  />
+  /-->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--CallToAction
     title="Let's create together"
     subtitle="Ready to transform your vision into captivating designs?"
     actions={[
@@ -389,11 +398,11 @@ const metadata = {
         href: '/',
       },
     ]}
-  />
+  /-->
 
   <!-- BlogLatestPost Widget **************** -->
 
-  <BlogLatestPosts
+  <!--BlogLatestPosts
     id="blog"
     title="Explore my insightful articles on my blog"
     information={`Dive into a realm of design wisdom and creative inspiration, where you'll find invaluable insights, practical tips, and captivating narratives that elevate and enrich your creative journey.`}
@@ -401,5 +410,5 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </BlogLatestPosts>
+  </BlogLatestPosts-->
 </Layout>
