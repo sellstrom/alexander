@@ -182,8 +182,8 @@ metadata:
         height: 628
     type: website
   twitter:
-    handle: '@twitter_user'
-    site: '@twitter_user'
+    handle: '@rednaxela5950'
+    site: '@rednaxela5950'
     cardType: summary_large_image
 
 i18n:
