@@ -212,8 +212,56 @@ const metadata = {
     title="Academic Project"
     subtitle="Some relevant projects from my studies."
     isReversed
-    items={[
+    items={
+    
+    [
+
       {
+        title: 'Description:',
+        description:
+          'Perhaps nothing explains the concept of interactive stories better than The road not taken by Robert Frost. His poem tells the story of a man following a road through the woods, when he comes to a fork in the road. Which way should he go? And how will this choice affect the rest of his life? In an interactive story, the author expands their story along multiple branches, and invites the reader to choose for themselves which path to take. They can also restart the story to go back and see what would lie down that other road.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Placeholder',
+      },
+    ]}
+    image={{
+      src: 'https://plus.unsplash.com/premium_photo-1714265045263-e78b932b2d4b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      //src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
+      alt: 'CarsBnB',
+    }}
+    callToAction={
+    {
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1565268&dswid=452',
+    }
+    }
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Bachelor Thesis: <br /><span class="text-2xl">A System for Creating, Sharing and Listening to Interactive Stories</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  
+
+  
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+   {
         title: 'Description:',
         description:
           'A cross-platform mobile application written in Flutter for renting privately owned vehicles.    ',
@@ -229,28 +277,20 @@ const metadata = {
       //src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
       alt: 'CarsBnB',
     }}
-    callToAction={
-    {
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
-    }
-    }
   >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">CarsBnB</span>
-      </h3>
-    </Fragment>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Project 1: <br /><span class="text-2xl">CarsBnB</span>
+    </h3>
+  </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
   </Content>
 
-  <!-- Content Widget **************** -->
-
+  
+  
   <Content
     isReversed
     isAfterContent={true}
@@ -287,7 +327,6 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
   <!-- Content Widget **************** -->
 
   <Content
