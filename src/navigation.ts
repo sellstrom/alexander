@@ -172,6 +172,7 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },*/
   ],
   socialLinks: [
+    { ariaLabel: 'Telegram', icon: 'tabler:brand-telegram', href: 'https://t.me/Cellis59' },
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/rednaxela5950' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/rednaxela5950' },
   ],
