@@ -12,6 +12,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import { getPermalink } from '~/utils/permalinks';
 import Features from '~/components/widgets/Features.astro';
 import Note from '~/components/widgets/Note.astro';
+import Image from '~/components/common/Image.astro';
 
 const metadata = {
   title: 'Alexander Sellström - Full-Stack Software Engineer',
@@ -86,11 +87,13 @@ const metadata = {
         },
       },
     */]}
+
     image={{
       src: '~/assets/images/alex-hero.png',
-      alt: 'Colorful Image',
+      alt: 'Alex Portrait',
       loading: 'eager',
     }}
+    
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
@@ -139,25 +142,20 @@ I am now seeking new opportunities to take on exciting challenges.
     items={[
        {
         title:
-          'Software Engineer <br /> <span class="font-normal"><a href=#>Advatar Systems AB</a></span> <br /> <span class="text-sm font-normal">2022-Present</span>',
-        description: `
-        Specializing in Mobile Apps on Android, Digital Identity and Verifiable Credential Infrastructure Projects.
-        `,
+          'Software Engineer <br /> <span class="font-normal">Advatar Systems AB</span> <br /> <span class="text-sm font-normal">2022-Present</span>',
+        description: `Specializing in Mobile Apps on Android, Digital Identity and Verifiable Credential Infrastructure Projects.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Test Engineer <br /> <span class="font-normal"><a href=https://certify.health>Certify Health</a></span> <br /> <span class="text-sm font-normal">2021</span>',
-        description: `
-        Wrote unit tests for SaaS to issue EUDCC Covid Certificates.
-        `,
+        description: `Wrote unit tests for SaaS to issue EUDCC Covid Certificates.`,
         icon: 'tabler:briefcase',
       },
       {
         title:
           'Volunteer Manager for Polhacks <br /> <span class="font-normal"><a href=https://www.utn.se>Uppsala Union of Engineering and Science Students (UTN)</a></span> <br /> <span class="text-sm font-normal">2017 - 2018</span>',
-        description: `
-     Polhacks is an annual three day LAN-party and game festival held by UTN. For one year my main responsibilites included educating and managing ~40 volunteer workers and planning, procuring, and installing the equipment nessescary for powering hundreds of computers. Beyond my main responsibilities associated with my role, I had to assist my committee in other tasks such as hosting dinners for hundreds of people, procure sponsorships, hold tournaments, and more. This taught me valuable leadership and teamworking skills.   `,
+        description: `Polhacks is an annual three day LAN-party and game festival held by UTN. For one year my main responsibilites included educating and managing ~40 volunteer workers and planning, procuring, and installing the equipment nessescary for powering hundreds of computers. Beyond my main responsibilities associated with my role, I had to assist my committee in other tasks such as hosting dinners for hundreds of people, procure sponsorships, hold tournaments, and more. This taught me valuable leadership and teamworking skills.   `,
         icon: 'tabler:briefcase',
       },
     ]}
