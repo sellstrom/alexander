@@ -15,7 +15,7 @@ import Note from '~/components/widgets/Note.astro';
 import Image from '~/components/common/Image.astro';
 
 const metadata = {
-  title: 'Alexander Sellström - Full-Stack Software Engineer',
+  title: 'Alexander Sellström - Full-Stack Software Engineer'
 };
 ---
 
@@ -35,7 +35,7 @@ const metadata = {
         {
           text: 'Hire me',
           href: '#',
-        },
+        }
       ]}
       isSticky
       showToggleTheme
@@ -91,21 +91,19 @@ const metadata = {
     image={{
       src: '~/assets/images/alex-hero.png',
       alt: 'Alex Portrait',
-      loading: 'eager',
+      loading: 'eager'
     }}
     
   >
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
       <p>
-        Welcome to my creative journey, where innovation meets dedication. My work reflects a deep commitment to transforming ideas into reality, with each line of code serving as a brushstroke on the canvas of imagination.
+        I'm a full-stack software engineer and <a class="underline" href="https://www.activism.net/cypherpunk/manifesto.html">cypherpunk</a>. I'm ideologically motivated to create dissident technologies that protect our most essential liberties, even if our legislators fail us.
       </p>
-      <br />
+      <br>
       <p>
-        
-I am now seeking new opportunities to take on exciting challenges.
+        Hailing from Sweden, but born to an American parent, I speak Swedish and English natively.
       </p>
-      
     </Fragment>
 
     <Fragment slot="bg">
@@ -122,14 +120,14 @@ I am now seeking new opportunities to take on exciting challenges.
       {
         title: 'Emerald',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'A peer-to-peer imageboard protocol powered by blockchain and zero-knowledge cryprtography',
+        icon: 'tabler:diamond'
       },
       {
         title: 'Myntfot',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'A stablecoin backed exchange-tradeable index funds',
+        icon: 'tabler:coin'
       },
     ]}
   />
@@ -144,20 +142,20 @@ I am now seeking new opportunities to take on exciting challenges.
         title:
           'Software Engineer <br /> <span class="font-normal">Advatar Systems AB</span> <br /> <span class="text-sm font-normal">2022-Present</span>',
         description: `Specializing in Mobile Apps on Android, Digital Identity and Verifiable Credential Infrastructure Projects.`,
-        icon: 'tabler:briefcase',
+        icon: 'tabler:briefcase'
       },
       {
         title:
           'Test Engineer <br /> <span class="font-normal"><a href=https://certify.health>Certify Health</a></span> <br /> <span class="text-sm font-normal">2021</span>',
         description: `Wrote unit tests for SaaS to issue EUDCC Covid Certificates.`,
-        icon: 'tabler:briefcase',
+        icon: 'tabler:briefcase'
       },
       {
         title:
           'Volunteer Manager for Polhacks <br /> <span class="font-normal"><a href=https://www.utn.se>Uppsala Union of Engineering and Science Students (UTN)</a></span> <br /> <span class="text-sm font-normal">2017 - 2018</span>',
         description: `Polhacks is an annual three day LAN-party and game festival held by UTN. For one year my main responsibilites included educating and managing ~40 volunteer workers and planning, procuring, and installing the equipment nessescary for powering hundreds of computers. Beyond my main responsibilities associated with my role, I had to assist my committee in other tasks such as hosting dinners for hundreds of people, procure sponsorships, hold tournaments, and more. This taught me valuable leadership and teamworking skills.   `,
-        icon: 'tabler:briefcase',
-      },
+        icon: 'tabler:briefcase'
+      }
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
@@ -170,12 +168,12 @@ I am now seeking new opportunities to take on exciting challenges.
     items={[
       {
         title: `Master of Science Information Technology <br /> <span class="font-normal"><a href=https://www.uu.se/en/students/department/information-technology>Uppsala University</a></span></span> <br /> <span class="text-sm font-normal">2017 - </span>`,
-        icon: 'tabler:school',
+        icon: 'tabler:school'
       },
       {
         title: `Advanced Mathematics Program <br /> <span class="font-normal"><a href=https://www.danderyd.se/skolor/danderyds-gymnasium/program/spetsutbildning-i-matematik/>Danderyds Gymnasium</a></span> <br /> <span class="text-sm font-normal">2013 - 2016</span>`,
-        icon: 'tabler:school',
-      },
+        icon: 'tabler:school'
+      }
     ]}
     classes={{ container: 'max-w-3xl' }}
   />
@@ -190,16 +188,16 @@ I am now seeking new opportunities to take on exciting challenges.
     items={[
       {
         title: 'Analytical Mind',
-        description: 'Proficient in crafting visually appealing designs that convey messages effectively.',
+        description: 'Proficient in crafting visually appealing designs that convey messages effectively.'
       },
       {
         title: 'Attention to detail',
-        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.',
+        description: 'Skilled at developing cohesive brand identities, including logos and brand guidelines.'
       },
       {
         title: 'User-centered design',
-        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.',
-      },
+        description: 'Experienced in creating user-friendly interfaces and optimizing user experiences.'
+      }
     ]}
   />
 
@@ -207,7 +205,7 @@ I am now seeking new opportunities to take on exciting challenges.
 
   <Content
     id="porfolio"
-    title="Academic Project"
+    title="Academic Projects"
     subtitle="Some relevant projects from my studies."
     isReversed
     items={
@@ -217,25 +215,24 @@ I am now seeking new opportunities to take on exciting challenges.
       {
         title: 'Description:',
         description:
-          'Perhaps nothing explains the concept of interactive stories better than The road not taken by Robert Frost. His poem tells the story of a man following a road through the woods, when he comes to a fork in the road. Which way should he go? And how will this choice affect the rest of his life? In an interactive story, the author expands their story along multiple branches, and invites the reader to choose for themselves which path to take. They can also restart the story to go back and see what would lie down that other road.',
+          "Perhaps nothing explains the concept of interactive stories better than The road not taken by Robert Frost. His poem tells the story of a man following a road through the woods, when he comes to a fork in the road. Which way should he go? And how will this choice affect the rest of his life? In an interactive story, the author expands their story along multiple branches, and invites the reader to choose for themselves which path to take. They can also restart the story to go back and see what would lie down that other road.",
       },
       {
         title: 'Role:',
         description:
-          'Placeholder',
-      },
+          "Mobile app front-end in react and expo. I also wrote code for our nodejs back-end, configured all the servers, VMs, databases, and third-party services such as speech-to-text."
+      }
     ]}
     image={{
       src: 'https://plus.unsplash.com/premium_photo-1714265045263-e78b932b2d4b?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      //src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'CarsBnB',
+      alt: 'Dreamscape'
     }}
     callToAction={
     {
       target: '_blank',
-      text: 'Go to the project',
+      text: 'Read the thesis',
       icon: 'tabler:chevron-right',
-      href: 'https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1565268&dswid=452',
+      href: 'https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1565268&dswid=7077'
     }
     }
   >
@@ -251,8 +248,6 @@ I am now seeking new opportunities to take on exciting challenges.
   </Content>
   
 
-  
-
   <!-- Content Widget **************** -->
 
   <Content
@@ -262,23 +257,30 @@ I am now seeking new opportunities to take on exciting challenges.
    {
         title: 'Description:',
         description:
-          'A cross-platform mobile application written in Flutter for renting privately owned vehicles.    ',
+          "A cross-platform mobile application written in Flutter for renting privately owned vehicles. Like Airbnb for cars."
       },
       {
         title: 'Role:',
         description:
-          'Placeholder',
-      },
+          "Back-end code and managing our Google Cloud stuff. I worked on front-end stuff when I didn't have anything better to do."
+      }
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1675122130691-0f837deefb80?q=80&w=2235&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      //src: 'https://images.unsplash.com/photo-1658248165252-71e116af1b34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=928&q=80',
-      alt: 'CarsBnB',
+      src: '~/assets/images/Carsbnb.png',
+      alt: 'Carsnb'
     }}
+    callToAction={
+      {
+        target: '_blank',
+        text: 'Read the report',
+        icon: 'tabler:chevron-right',
+        href: '~/assets/papers/Software_Engineering_Project_Report.pdf'
+      }
+      }
   >
   <Fragment slot="content">
     <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-      Project 1: <br /><span class="text-2xl">CarsBnB</span>
+      Software Engineering Project (15 credits): <br /><span class="text-2xl">Carsbnb</span>
     </h3>
   </Fragment>
 
@@ -287,8 +289,7 @@ I am now seeking new opportunities to take on exciting challenges.
   </Fragment>
   </Content>
 
-  
-  
+
   <Content
     isReversed
     isAfterContent={true}
@@ -296,28 +297,27 @@ I am now seeking new opportunities to take on exciting challenges.
       {
         title: 'Description:',
         description:
-          'Genetic algorithms for self-driving cars with spatial awareness in a simulated environment.',
+          "Genetic algorithms for self-driving cars with spatial awareness in a simulated environment."
       },
       {
         title: 'Role:',
-        description: `Placeholder`,
-      },
+        description: "We pair-programmed all of it."
+      }
     ]}
     image={{
-      src: 'https://plus.unsplash.com/premium_photo-1733317438378-1d6a0b8e65e7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      //src: 'https://images.unsplash.com/photo-1619983081563-430f63602796?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
-      alt: 'Genetic Algorithms',
+      src: '~/assets/images/gameshot.png',
+      alt: 'Genetic Algorithms'
     }}
     callToAction={{
       target: '_blank',
-      text: 'Go to the project',
+      text: 'Read the report',
       icon: 'tabler:chevron-right',
-      href: '#',
+      href: '~/assets/papers/NCML_report.pdf'
     }}
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Self-driving Car</span>
+        Natural Computation Methods for Machine Learning: <br /><span class="text-2xl">Neuroevolution for Automated Driving</span>
       </h3>
     </Fragment>
 
@@ -327,29 +327,61 @@ I am now seeking new opportunities to take on exciting challenges.
   </Content>
   <!-- Content Widget **************** -->
 
+
+  <Content
+  isReversed
+  isAfterContent={true}
+  items={[
+    {
+      title: 'Description:',
+      description:
+        "Clone of Flappy Bird written in Haskell"
+    },
+    {
+      title: 'Role:',
+      description: "Coding the physics and animations, and other work related to graphical sprites."
+    }
+  ]}
+  image={{
+    src: '~/assets/images/flappybirb_blur.png',
+    alt: 'Flappy Birb'
+  }}
+  callToAction={{
+    target: '_blank',
+    text: 'Watch the demo',
+    icon: 'tabler:chevron-right',
+    href: '~/assets/videos/out.mp4'
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Program Design and Data Structures: <br /><span class="text-2xl">Flappy Birb</span>
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-neutral-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>
+<!-- Content Widget **************** -->
+
+
   <Content
     isReversed
     isAfterContent={true}
     items={[
       {
         title: 'Description:',
-        description: `A cross-platform jukebox app that lets you create a kahoot-like session.`,
+        description: "A cross-platform jukebox app that lets you create a kahoot-like session."
       },
       {
         title: 'Role:',
-        description: `Placeholder`,
-      },
+        description: "myrolehere"
+      }
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1637472480890-ede76e753687?q=80&w=2235&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      //https://plus.unsplash.com/premium_photo-1683288295841-782fa47e4770?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
-      alt: 'Jukebox',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: '#',
+      src: '~/assets/images/PartyZone_blur.png',
+      alt: 'PartyZone'
     }}
   >
     <Fragment slot="content">
